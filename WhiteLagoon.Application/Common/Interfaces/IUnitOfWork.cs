@@ -8,6 +8,7 @@ namespace WhiteLagoon.Application.Common.Interfaces
 {
     public interface IUnitOfWork
     {
+        //it is a Unit of work to save time to updating Addscoped in program.cs everytime
         IVillaRepository Villa { get; }
     }
 }
