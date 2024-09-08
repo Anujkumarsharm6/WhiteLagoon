@@ -13,7 +13,9 @@ namespace WhiteLagoon.Infrastructure.Migrations.Repository
         private readonly ApplicationDbContext _db;
         public IVillaRepository Villa { get; private set; }
         public UnitOfWork(ApplicationDbContext db)
-        {
+        {    
+            //this has been made to save time in updating depending injection in program.cs
+        
             _db = db;
             Villa = new VillaRepository(_db);
         }
